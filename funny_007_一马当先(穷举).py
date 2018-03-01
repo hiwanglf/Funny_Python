@@ -26,7 +26,7 @@ while flag:
             eight = ((point[0] - 1, point[1] - 2), (point[0] - 1, point[1] + 2),
                      (point[0] + 1, point[1] - 2), (point[0] + 1, point[1] + 2),
                      (point[0] - 2, point[1] - 1), (point[0] + 2, point[1] - 1),
-                     (point[0] - 2, point[1] + 1), (point[0] + 2, point[1] +1))
+                     (point[0] - 2, point[1] + 1), (point[0] + 2, point[1] +1 ))
             if (m, n) in eight:
                 # 如果右上角的点在八个点当中，证明已经走到，即可以打印步数，退出程序
                 print(i)
