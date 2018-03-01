@@ -25,4 +25,4 @@ for x in range(a, int(b/a)):
         #print(x,y)
         if min_num(x,y) == b and max_num(x,y) ==a :
             print("%d %d" %(x, y))
-            brea
+            break
