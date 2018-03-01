@@ -35,7 +35,8 @@ while flag:
             for per_eight in eight:
                 if per_eight == (0, 0):
                     continue
-                elif per_eight not in step_list and per_eight[0] >= 0 and per_eight[0] <= m and per_eight[1] >= 0 and per_eight[1] <= n:
+                #elif per_eight not in step_list and per_eight[0] >= 0 and per_eight[0] <= m and per_eight[1] >= 0 and per_eight[1] <= n:
+                elif per_eight not in step_list and 0 <= per_eight[0] <= m and 0 <= per_eight[1] <= n:
                     # 如果8个方向中的点不在已经走过的列表里面,则将新点加入到point_list当中；
                     point_list.append(per_eight)
                     # 如果8个方向中的点不在已经走过的列表里面，则将新点加入到step_dict里面，准备下一步在从这些点出发，去往下一个8点
