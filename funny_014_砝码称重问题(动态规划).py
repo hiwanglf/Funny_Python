@@ -93,6 +93,3 @@ if n in weight_history:
     print("Yes")
 else:
     print("No")
-
-
-# 
