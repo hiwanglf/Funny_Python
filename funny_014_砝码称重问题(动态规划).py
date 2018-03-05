@@ -36,3 +36,63 @@ for i in range(0, len(w)):
                 weight_history.append(old_history[x]+weight_list[y])
 
 print(len(weight_history))
+
+
+# 描述:
+# 有一组砝码，重量互不相等，分别为m1、m2、m3……mn；每种砝码的数量有无限个。
+# 现要用这些砝码去称物体的重量,给你一个重量n,请你判断有给定的砝码能否称出重量n。
+# 现在给你一个正整数列表w和一个正整数n，列表w中的第i个元素w[i]表示第i种砝码的重量，
+# n表示要你判断的重量。如果给定砝码能称出重量n，输出Yes，否则输出No。
+# 例如，w=[2,5,11], n=9,则输出Yes（取两个2，一个5）。
+
+w = [2, 5, 11]
+n = 13
+
+
+def every_weight(weight, number):
+    """计算同个重量的砝码，所能称重的列表
+
+    :param weight: 单个砝码的重量
+    :param number: 砝码数量
+    :return: 返回能产生多少种结果的称重结果列表
+    """
+    weight_list = []
+    for i in range(0, number + 1):
+        weight_list.append(weight * i)
+    return weight_list
+
+
+def num_weight(w, n):
+    """计算每个砝码可能的最大数量
+
+    :param w:砝码的质量列表
+    :param n:要实现的质量
+    :return:返回单个砝码最大数量的列表
+    """
+    num = []
+    for per_num in w:
+        num.append(int(n / per_num + 1))
+    return num
+
+
+
+num = num_weight(w, n)
+weight_history = [0]  # 记录所有产生过的重量
+# 便利所有重量，同个重量的砝码可以产生的重量数目先计算出来
+for i in range(0, len(w)):
+    weight_list = every_weight(w[i], num[i])
+    # 将weight值暂时赋给一个新的列表，因为weight将改变，造成死循环
+    old_history = weight_history
+    for x in range(0, len(old_history)):
+        for y in range(0, len(weight_list)):
+            # 如果历史列表中的砝码质量和新的砝码质量之和不在历史列表当中，则加入到历史列表当中去
+            if (old_history[x] + weight_list[y]) not in old_history:
+                weight_history.append(old_history[x] + weight_list[y])
+
+if n in weight_history:
+    print("Yes")
+else:
+    print("No")
+
+
+# 
