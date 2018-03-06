@@ -25,3 +25,55 @@ if num_to_list(n,10) == num_to_list(n,12) and num_to_list(n,10) == num_to_list(n
     print("Yes")
 else:
     print("No")
+
+
+
+#
+# 描述:
+# 给你一个十进制数a，将它转换成b进制数,如果b>10,用大写字母表示（10用A表示，等等）
+# a为32位整数，2 <= b <= 16
+# 如a=3,b = 2, 则输出11
+def num_to_list(n, method=12):
+    """进制数字转换
+
+    :param n:需要转化的十进制数字
+    :param method:需要转换成几进制
+    :return:返回一个列表
+    """
+    num_list = []
+    while(n > 0):
+        num_list.append(n%method)
+        n = int(n/method)
+    num_list.reverse()
+    return num_list
+
+
+def num_to_str(num_list):
+    str_list = []
+    for num in num_list:
+        str_list.append(str(num))
+    return str_list
+
+dict = {
+    '10': 'A',
+    '11': 'B',
+    '12': 'C',
+    '13': 'D',
+    '14': 'E',
+    '15': 'F'
+}
+#a = 123456789123456789123456789123
+a = -127
+b = 16
+num_list = num_to_list(a, b)
+str_list = num_to_str(num_list)
+if b < 11:
+    print("".join(str_list))
+else:
+    final_list = []
+    for str_atom in str_list:
+        if str_atom in dict:
+            final_list.append(dict[str_atom])
+        else:
+            final_list.append(str_atom)
+    print("".join(final_list))
