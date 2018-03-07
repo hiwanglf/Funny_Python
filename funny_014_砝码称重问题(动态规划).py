@@ -44,7 +44,7 @@ print(len(weight_history))
 # 现在给你一个正整数列表w和一个正整数n，列表w中的第i个元素w[i]表示第i种砝码的重量，
 # n表示要你判断的重量。如果给定砝码能称出重量n，输出Yes，否则输出No。
 # 例如，w=[2,5,11], n=9,则输出Yes（取两个2，一个5）。
-
+# 下面这个算法效率太低
 w = [2, 5, 11]
 n = 13
 
@@ -93,3 +93,38 @@ if n in weight_history:
     print("Yes")
 else:
     print("No")
+
+# 描述:
+# 有一组砝码，重量互不相等，分别为m1、m2、m3……mn；每种砝码的数量有无限个。
+# 现要用这些砝码去称物体的重量,给你一个重量n,请你判断有给定的砝码能否称出重量n。
+# 现在给你一个正整数列表w和一个正整数n，列表w中的第i个元素w[i]表示第i种砝码的重量，
+# n表示要你判断的重量。如果给定砝码能称出重量n，输出Yes，否则输出No。
+# 例如，w=[2,5,11], n=9,则输出Yes（取两个2，一个5）。
+# 高效率算法
+
+def check_mod(new_list, n):
+    """检查新产生的列表里面这些元素能不能凑成n
+
+    :param new_list:整数列表
+    :param n:要凑成的数
+    :return:返回整数求余之后的数值
+    """
+    new_list.reverse()
+    # for循环当中取余时候，必须从大的数字往小的数字走
+    for weight in new_list:
+        if n == 0:
+            break
+        if weight <= n:
+            n = n % weight
+    return n
+# 对初始列表进行排序，从小到大
+w.sort()
+flag = 'No'
+length = len(w)
+for i in range(1, length+1):
+    result = check_mod(w[0:i], n)
+    if result == 0:
+        flag = 'Yes'
+        break
+
+print(flag)
