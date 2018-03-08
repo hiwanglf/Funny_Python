@@ -1,5 +1,6 @@
 # Funny_Python
 这是一个关于有趣的Python小程序的代码仓
+> 题目主要来源是** [挑战python](http://www.pythontip.com/coding/code_oj) ** OJ上面。
 
 ## 目录
 - funny\_001_最小公倍数

@@ -33,6 +33,8 @@ else:
 # 给你一个十进制数a，将它转换成b进制数,如果b>10,用大写字母表示（10用A表示，等等）
 # a为32位整数，2 <= b <= 16
 # 如a=3,b = 2, 则输出11
+
+# 注意：需要处理负数！！！需要注意0
 def num_to_list(n, method=12):
     """进制数字转换
 
@@ -40,6 +42,8 @@ def num_to_list(n, method=12):
     :param method:需要转换成几进制
     :return:返回一个列表
     """
+    if n == 0:
+        return [0]
     num_list = []
     while(n > 0):
         num_list.append(n%method)
@@ -49,6 +53,11 @@ def num_to_list(n, method=12):
 
 
 def num_to_str(num_list):
+    """数字列表转为字符列表
+
+    :param num_list:整数列表
+    :return:字符列表
+    """
     str_list = []
     for num in num_list:
         str_list.append(str(num))
@@ -62,13 +71,21 @@ dict = {
     '14': 'E',
     '15': 'F'
 }
-#a = 123456789123456789123456789123
-a = -127
-b = 16
+
+a = -110
+b = 2
+
+# 符号判断，如果负数，将符号保留，正数则无符号
+if a < 0:
+    sign = "-"
+    a = abs(a)
+else:
+    sign = ""
+
 num_list = num_to_list(a, b)
 str_list = num_to_str(num_list)
 if b < 11:
-    print("".join(str_list))
+    print(sign + "".join(str_list))
 else:
     final_list = []
     for str_atom in str_list:
@@ -76,4 +93,4 @@ else:
             final_list.append(dict[str_atom])
         else:
             final_list.append(str_atom)
-    print("".join(final_list))
+    print(sign + "".join(final_list))
