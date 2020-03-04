@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52874591-129d-47e4-adf3-50fa12ebd573" name="Default" comment="">
+    <list default="true" id="52874591-129d-47e4-adf3-50fa12ebd573" name="Default" comment="add tag info">
       <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
@@ -30,6 +30,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="hiwanglf &lt;hiwanglf@163.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds">
@@ -61,7 +66,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunManager" selected="Python.funny_017_2048">
     <configuration name="funny_016_图片转换" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -136,10 +141,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="482" y="187" key="SettingsEditor" timestamp="1583302745164">
+    <state x="513" y="84" width="951" height="936" key="CommitChangelistDialog2" timestamp="1583303975909">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583302745164" />
+    <state x="513" y="84" width="951" height="936" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1583303975909" />
+    <state x="243" y="116" width="1482" height="872" key="DiffContextDialog" timestamp="1583303939327">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="243" y="116" width="1482" height="872" key="DiffContextDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583303939327" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1583303634493">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583303634493" />
+    <state x="843" y="207" width="280" height="691" key="VCS.ChangeListViewerDialog" timestamp="1583304087614">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="843" y="207" width="280" height="691" key="VCS.ChangeListViewerDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583304087614" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1583303845640">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1583303845640" />
+    <state x="668" y="346" width="641" height="413" key="git4idea.merge.GitPullDialog" timestamp="1583303813234">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="668" y="346" width="641" height="413" key="git4idea.merge.GitPullDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583303813234" />
+    <state x="791" y="398" width="394" height="309" key="git4idea.ui.GitTagDialog" timestamp="1583304089784">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="791" y="398" width="394" height="309" key="git4idea.ui.GitTagDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583304089784" />
   </component>
   <component name="masterDetails">
     <states>
