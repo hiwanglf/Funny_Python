@@ -12,24 +12,30 @@ graph = {
 
 
 class Solution:
-    def BFS(self, graph, s):
+    def DFS(self, graph, s):
         """
 
         :param graph: 图，字典形式输入
         :param s: 开始节点
         :return: 看具体情况
         """
-        queue = [s]                 # use list for queue
+        stack = [s]                 # use list for stack
         seen = set(s)                # set storage node had read
-        parents = {                 # storage prefer node /parent node
-            s: None
-        }
-        while len(queue) > 0:
-            vertex = queue.pop(0)
+        # parents = {                 # storage prefer node /parent node
+        #     s: None
+        # }
+        while len(stack) > 0:
+            vertex = stack.pop()    # pop last item
             nodes = graph[vertex]
             for w in nodes:
                 if w not in seen:
-                    queue.append(w)
+                    stack.append(w)
                     seen.add(w)
+                    # parents[w] = vertex
             print(vertex)           # print bfs read result
-        return parents
+        # return parents
+
+
+test = Solution()
+test.DFS(graph, 'A')
+
