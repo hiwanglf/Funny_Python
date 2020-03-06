@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52874591-129d-47e4-adf3-50fa12ebd573" name="Default" comment="add tag info">
-      <change afterPath="$PROJECT_DIR$/leetcode/LastWordLength.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法/DP/noRepeatString.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法/DP/noRepeatString2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法/BFS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +210,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519887600135</updated>
-      <workItem from="1583415094204" duration="5322000" />
+      <workItem from="1583415094204" duration="7263000" />
     </task>
     <task id="LOCAL-00001" summary="add tag info">
       <created>1583304129643</created>
