@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52874591-129d-47e4-adf3-50fa12ebd573" name="Default" comment="add tag info">
-      <change afterPath="$PROJECT_DIR$/算法/DFS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/Graph/Dijkstra.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/算法/BFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/算法/BFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法/DP/max_sum_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法/DP/noRepeatString.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法/DP/noRepeatString2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法/Graph/BFS.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法/Graph/DFS.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法/al_001_sort.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,12 +74,15 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/算法/Graph" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/算法" />
       <recent name="$PROJECT_DIR$/算法/DP" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.DFS">
+  <component name="RunManager" selected="Python.Dijkstra">
     <configuration name="BFS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="funny_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="LastWordLength" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Dijkstra" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="funny_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,12 +135,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm/Graph" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/LastWordLength.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm/Graph/Dijkstra.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,19 +194,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.LastWordLength" />
       <item itemvalue="Python.noRepeatString" />
       <item itemvalue="Python.noRepeatString2" />
       <item itemvalue="Python.DFS" />
       <item itemvalue="Python.BFS" />
+      <item itemvalue="Python.Dijkstra" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Dijkstra" />
         <item itemvalue="Python.DFS" />
         <item itemvalue="Python.BFS" />
         <item itemvalue="Python.noRepeatString2" />
         <item itemvalue="Python.noRepeatString" />
-        <item itemvalue="Python.LastWordLength" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +220,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519887600135</updated>
-      <workItem from="1583415094204" duration="7992000" />
+      <workItem from="1583415094204" duration="11850000" />
     </task>
     <task id="LOCAL-00001" summary="add tag info">
       <created>1583304129643</created>
@@ -257,22 +265,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="243" y="116" width="1482" height="872" key="DiffContextDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583303939327" />
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1583500727008">
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1583505101499">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583500727008" />
-    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1583500727007">
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583505101499" />
+    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1583505101498">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583500727007" />
-    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1583500727006">
+    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583505101498" />
+    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1583505101498">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583500727006" />
-    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1583500727007">
+    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583505101498" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1583505101499">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583500727007" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583505101499" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1583420052652">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -315,6 +323,7 @@
     <SUITE FILE_PATH="coverage/Funny_Python$LastWordLength.coverage" NAME="LastWordLength Coverage Results" MODIFIED="1583416782202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode" />
     <SUITE FILE_PATH="coverage/Funny_Python$noRepeatString2.coverage" NAME="noRepeatString2 Coverage Results" MODIFIED="1583420182782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/算法/DP" />
     <SUITE FILE_PATH="coverage/Funny_Python$DFS.coverage" NAME="DFS Coverage Results" MODIFIED="1583500726997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/算法" />
+    <SUITE FILE_PATH="coverage/Funny_Python$Dijkstra.coverage" NAME="Dijkstra Coverage Results" MODIFIED="1583505101492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Graph" />
     <SUITE FILE_PATH="coverage/Funny_Python$noRepeatString.coverage" NAME="noRepeatString Coverage Results" MODIFIED="1583419422027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/算法/DP" />
   </component>
   <component name="masterDetails">
